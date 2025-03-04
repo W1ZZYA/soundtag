@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Страница с кнопкой и затемнённым фоном</title>
+  <title>Страница с динамичным фоном и кнопкой</title>
   <style>
     /* Сброс стандартных отступов и выравнивание */
     body, html {
@@ -13,7 +13,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #2e0044; /* Затемнённый фиолетовый фон */
+      background: linear-gradient(45deg, #6a0dad, #4b0082, #2e0044, #3a0066);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
     }
 
     /* Стилизация кнопки */
@@ -21,7 +23,7 @@
       padding: 15px 30px;
       font-size: 18px;
       color: #fff;
-      background: linear-gradient(145deg, #6a0dad, #4b0082); /* Градиент от фиолетового к темно-фиолетовому */
+      background: linear-gradient(145deg, #6a0dad, #4b0082);
       border: none;
       border-radius: 50px;
       cursor: pointer;
@@ -36,12 +38,25 @@
 
     /* Эффект при нажатии */
     .button:active {
-      background: linear-gradient(145deg, #3a0066, #330066); /* Темнее оттенки при нажатии */
+      background: linear-gradient(145deg, #3a0066, #330066);
       transform: translateY(4px);
+    }
+
+    /* Анимация градиента */
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
   </style>
 </head>
 <body>
-  <button class="button">Тыкай</button>
+  <button class="button">Нажми меня</button>
 </body>
 </html>
