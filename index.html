@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Страница с кнопкой и градиентным фоном</title>
+  <title>Страница с кнопкой и темно-фиолетовым фоном</title>
   <style>
     /* Сброс стандартных отступов и выравнивание */
     body, html {
@@ -13,7 +13,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #6e7dff, #5560ea); /* Градиентный фон */
+      background-color: #4B0082; /* Темно-фиолетовый фон */
     }
 
     /* Стилизация кнопки */
@@ -21,7 +21,7 @@
       padding: 15px 30px;
       font-size: 18px;
       color: #fff;
-      background: linear-gradient(145deg, #6e7dff, #5560ea);
+      background: linear-gradient(145deg, #6a0dad, #4b0082); /* Градиент от фиолетового к темно-фиолетовому */
       border: none;
       border-radius: 50px;
       cursor: pointer;
@@ -30,13 +30,13 @@
 
     /* Эффект при наведении */
     .button:hover {
-      background: linear-gradient(145deg, #5560ea, #6e7dff);
+      background: linear-gradient(145deg, #4b0082, #6a0dad);
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     }
 
     /* Эффект при нажатии */
     .button:active {
-      background: linear-gradient(145deg, #4a5bc7, #3f4a9f);
+      background: linear-gradient(145deg, #3a0066, #330066); /* Темнее оттенки при нажатии */
       transform: translateY(4px);
     }
   </style>
