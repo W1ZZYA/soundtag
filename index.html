@@ -6,27 +6,4 @@
     <link rel="stylesheet" href="style.css" />
     <title>SoundTag</title>
     <style>
-        .round-button {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            background-image: url('sssa.png');
-            background-size: cover;
-            border: none;
-            cursor: pointer;
-            outline: none;
-        }
-    </style>
-</head>
-<body>
-    <button class="round-button" onclick="playSound()"></button>
-    <audio id="sound" src="228.mp3"></audio>
-    <script>
-        function playSound() {
-            var sound = document.getElementById('sound');
-            sound.currentTime = 0; // Сброс времени воспроизведения
-            sound.play(); // Воспроизведение звука
-        }
-    </script>
-</body>
-</html>
+        <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
