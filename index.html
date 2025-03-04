@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>SoundTag</title>
-    <style>
-        <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница с кнопкой</title>
+  <style>
+    /* Сброс стандартных отступов и выравнивание */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    /* Стилизация кнопки */
+    .button {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: #fff;
+      background: linear-gradient(145deg, #6e7dff, #5560ea);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* Эффект при наведении */
+    .button:hover {
+      background: linear-gradient(145deg, #5560ea, #6e7dff);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Эффект при нажатии */
+    .button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <button class="button">Нажми меня</button>
+</body>
+</html>
