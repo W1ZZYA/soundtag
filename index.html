@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Страница с динамичным фоном и кнопкой</title>
+  <title>Страница с кнопкой и динамичным фоном</title>
   <style>
     /* Сброс стандартных отступов и выравнивание */
     body, html {
@@ -13,9 +13,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(45deg, #6a0dad, #4b0082, #2e0044, #3a0066);
-      background-size: 400% 400%;
-      animation: gradientAnimation 10s ease infinite;
+      background-color: #2e0044; /* Темно-фиолетовый фон */
     }
 
     /* Стилизация кнопки */
@@ -28,6 +26,8 @@
       border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease;
+      background-size: 200% 200%;
+      animation: gradientAnimation 3s linear infinite;
     }
 
     /* Эффект при наведении */
