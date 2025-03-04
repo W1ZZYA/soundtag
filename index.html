@@ -59,5 +59,13 @@
 </head>
 <body>
   <button class="button">Нажми меня</button>
+  <audio id="sound" src="228.mp3"></audio>
+    <script>
+        function playSound() {
+            var sound = document.getElementById('sound');
+            sound.currentTime = 0; // Сброс времени воспроизведения
+            sound.play(); // Воспроизведение звука
+        }
+    </script>
 </body>
 </html>
