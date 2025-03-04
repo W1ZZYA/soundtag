@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Страница с кнопкой и динамичным фоном</title>
+  <title>Страница с кнопкой и эффектом нажатия</title>
   <style>
     /* Сброс стандартных отступов и выравнивание */
     body, html {
@@ -40,6 +40,7 @@
     .button:active {
       background: linear-gradient(145deg, #3a0066, #330066);
       transform: translateY(4px);
+      box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     /* Анимация градиента */
